@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-148.0" layoutY="-207.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane fx:id="bp" layoutX="58.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <GridPane layoutX="120.0" layoutY="32.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="400.0" fitWidth="446.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@../Backround/Imagen.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="400.0" fitWidth="427.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Backround/Imagen.jpg" />
+                                 </image>
+                              </ImageView>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <top>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hola Adilem, acabo de notar una nuevo documentos. ¿Donde deseas guardarlos?" textAlignment="CENTER" wrappingWidth="596.1318359375" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Times New Roman" size="22.0" />
+                                       </font>
+                                       <BorderPane.margin>
+                                          <Insets left="5.0" top="40.0" />
+                                       </BorderPane.margin>
+                                    </Text>
+                                 </top>
+                                 <left>
+                                    <JFXButton onAction="#btnUniversidad" prefHeight="123.0" prefWidth="145.0" ripplerFill="#9d55bb" style="-fx-background-image: url(&quot;/OrganizadorDocumentos/src/Backround/Imagen.jpg&quot;); -fx-background-size: 100% 100%; -fx-border-color: #E9CAF8; -fx-border-width: 3;" stylesheets="@Disenador.css" text="Universidad" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets left="70.0" />
+                                       </BorderPane.margin>
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </left>
+                                 <right>
+                                    <JFXButton onAction="#btnPersonal" prefHeight="127.0" prefWidth="139.0" ripplerFill="#9d55bb" style="-fx-background-image: url(&quot;/OrganizadorDocumentos/src/Backround/Imagen.jpg&quot;); -fx-border-color: #E9CAF8; -fx-border-width: 3;" styleClass="bodybg" stylesheets="@application.css" text="Personal" textFill="WHITE" BorderPane.alignment="CENTER">
+                                       <BorderPane.margin>
+                                          <Insets right="70.0" />
+                                       </BorderPane.margin>
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="18.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </right>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
